@@ -15,9 +15,13 @@ Find the complete app code referenced in this guide [on GitHub](https://github.c
 Add photos tab and gallery,
 Allow to take picture
 
+[Saving](https://ionicframework.com/docs/angular/your-first-app/saving-photos)
+
 ### Feat 2
 
 Store photos and load
+
+[Storage](https://ionicframework.com/docs/angular/your-first-app/loading-photos)
 
 ### Add mobile and deploy
 

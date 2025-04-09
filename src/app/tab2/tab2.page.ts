@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonFab, IonFabButton, IonIcon, IonGrid, IonRow, IonCol, IonImg } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { camera } from 'ionicons/icons';
@@ -11,7 +11,7 @@ import { NgFor } from '@angular/common';
   styleUrls: ['tab2.page.scss'],
   imports: [NgFor, IonRow, IonCol, IonImg, IonGrid, IonFab, IonFabButton, IonIcon, IonHeader, IonToolbar, IonTitle, IonContent]
 })
-export class Tab2Page {
+export class Tab2Page implements OnInit {
 
   constructor(public photoService: PhotoService) {
     /**
@@ -20,6 +20,10 @@ export class Tab2Page {
      * referenced by name anywhere in your application.
      */
     addIcons({camera})
+  }
+
+  ngOnInit(): void {
+    this.photoService.loadSaved();
   }
 
   addPhotoToGallery() {
