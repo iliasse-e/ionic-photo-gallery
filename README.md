@@ -13,7 +13,7 @@ Find the complete app code referenced in this guide [on GitHub](https://github.c
 ### Feat 1
 
 Add photos tab and gallery,
-Allow to take picture
+Allow to take picture 
 
 [Saving](https://ionicframework.com/docs/angular/your-first-app/saving-photos)
 
